@@ -1,21 +1,24 @@
 name: core_location_fluttify
 description: A new Flutter project.
 version: 0.7.1
-author: yohom <yohombao@qq.com>
 homepage: https://github.com/fluttify-project/core_location_fluttify
+publish_to: none
+
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=2.0.0"
+  sdk: '>=3.11.0 <4.0.0'
+  flutter: '>=3.41.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  foundation_fluttify: ^0.13.0-dev.2
+  foundation_fluttify: 
+    path: ../foundation_fluttify
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_lints: any
 
 flutter:
   plugin:

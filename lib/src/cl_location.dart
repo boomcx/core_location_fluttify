@@ -2,7 +2,6 @@ import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 import 'cl_floor.dart';
 import 'cl_location_coordinate_2d.dart';
-// ignore_for_file: non_constant_identifier_names
 import 'objects.dart';
 
 class CLLocation extends NSObject {

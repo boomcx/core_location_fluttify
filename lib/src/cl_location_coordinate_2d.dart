@@ -1,4 +1,3 @@
-// ignore_for_file: non_constant_identifier_names
 import 'package:foundation_fluttify/foundation_fluttify.dart';
 
 import 'objects.dart';
@@ -18,7 +17,6 @@ class CLLocationCoordinate2D extends Ref {
     return CLLocationCoordinate2D()..refId = result?.refId;
   }
 
-  // ignore: non_constant_identifier_names
   static Future<List<CLLocationCoordinate2D>> create_batch(
     List<double> latitudeBatch,
     List<double> longitudeBatch,
