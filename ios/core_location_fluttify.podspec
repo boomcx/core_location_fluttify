@@ -12,7 +12,7 @@ A new Flutter project.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '13.0'
   s.dependency 'foundation_fluttify'
 
   s.frameworks = ["CoreLocation"]
