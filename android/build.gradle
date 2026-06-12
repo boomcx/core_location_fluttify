@@ -1,22 +1,6 @@
 group 'me.yohom.core_location_fluttify'
 version '1.0'
 
-buildscript {
-    ext.kotlin_version = '2.1.0'
-    repositories {
-        maven { url 'https://maven.aliyun.com/repository/google' }
-        maven { url 'https://maven.aliyun.com/repository/central' }
-        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.9.1'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
-
 rootProject.allprojects {
     repositories {
         maven { url 'https://maven.aliyun.com/repository/google' }
