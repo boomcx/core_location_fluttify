@@ -70,9 +70,11 @@ packages:
   foundation_fluttify:
     dependency: "direct main"
     description:
-      path: "../foundation_fluttify"
-      relative: true
-    source: path
+      path: "."
+      ref: HEAD
+      resolved-ref: e41ea89bdf111b946d1a9ba2021a8bf100dc53aa
+      url: "https://github.com/boomcx/foundation_fluttify"
+    source: git
     version: "0.14.0"
   leak_tracker:
     dependency: transitive
