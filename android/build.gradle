@@ -1,21 +1,16 @@
-group 'me.yohom.core_location_fluttify'
-version '1.0'
+// 1. 【删除】group 和 version 声明
+// Flutter 插件的版本由根目录的 pubspec.yaml 统一管理，此处声明是无效且多余的
 
-// rootProject.allprojects {
-//     repositories {
-//         maven { url 'https://maven.aliyun.com/repository/google' }
-//         maven { url 'https://maven.aliyun.com/repository/central' }
-//         google()
-//         mavenCentral()
-//     }
-// }
+// 2. 【使用】声明式插件语法 (替代旧的 apply plugin)
+plugins {
+    id "com.android.library"
+    id "org.jetbrains.kotlin.android"
+}
 
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-
+// 3. 【配置】Android 构建参数
 android {
-    namespace 'me.yohom.core_location_fluttify'
-    compileSdk 36
+    namespace "me.yohom.core_location_fluttify"
+    compileSdk 34
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
@@ -23,11 +18,11 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = '17'
+        jvmTarget = "17"
     }
 
     sourceSets {
-        main.java.srcDirs += 'src/main/kotlin'
+        main.java.srcDirs += "src/main/kotlin"
     }
 
     defaultConfig {
@@ -36,6 +31,11 @@ android {
     }
 
     lint {
-        disable 'InvalidPackage'
+        disable "InvalidPackage"
     }
+}
+
+// 4. 【依赖】
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.0"
 }
